@@ -64,6 +64,7 @@ angular.module('ui.bootstrap.accordion', ['ui.bootstrap.collapse'])
       return attrs.templateUrl || 'template/accordion/accordion-group.html';
     },
     scope: {
+      tabIndex:'@',
       heading: '@',               // Interpolate the heading attribute onto this scope
       isOpen: '=?',
       isDisabled: '=?'
@@ -174,6 +175,7 @@ angular.module('ui.bootstrap.accordion')
         return attrs.templateUrl || 'template/accordion/accordion-group.html';
       },
       scope: {
+        tabIndex: '@',
         heading: '@',               // Interpolate the heading attribute onto this scope
         isOpen: '=?',
         isDisabled: '=?'
@@ -246,4 +248,3 @@ angular.module('ui.bootstrap.accordion')
       }
     };
   }]);
-
